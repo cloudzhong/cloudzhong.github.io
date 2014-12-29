@@ -4,9 +4,6 @@ category : Learn
 tagline: "Supporting tagline"
 tags : beginner
 ---
-{% include JB/setup %}
-Try before include format.
-
 
 ## First Time use Github as blog
 
