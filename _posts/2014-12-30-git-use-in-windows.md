@@ -16,8 +16,9 @@ tags : [git,windows,github]
 ssh key 使得通过ssh协议来与git服务器交互，这需要服务器的git用户下的authorized_keys有你的public key
 
 	$ ssh-keygen -t rsa -C "your_email@example.com"
-
-把你的ssh key添加到github上  
+	
+~/.ssh 目录下会生成 private key: id_rsa  public key: id_rsa.pub  
+把你的ssh public key添加到github上  
 setting -> ssh keys -> Add SSH key
   
 设置用户与email和其他设置
