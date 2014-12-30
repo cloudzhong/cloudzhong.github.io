@@ -13,12 +13,13 @@ tags : [git,windows,github]
 
 ### git 配置
 生成ssh key  
-ssh key 使得通过ssh协议来与git服务器交互，这需要服务器的git用户下的authorized_keys有你的public key
+ssh key 使得通过ssh协议来与git服务器交互，这需要服务器的git用户下.ssh目录的authorized_keys文件有你的public key
 
 	$ ssh-keygen -t rsa -C "your_email@example.com"
 	
-~/.ssh 目录下会生成 private key: id_rsa  public key: id_rsa.pub  
-把你的ssh public key添加到github上  
+~/.ssh 目录下会生成id_rsa,id_rsa.pub文件
+id_rsa.pub 是public key.
+把你的ssh public key添加到github上，这样就能上传下载github上的repository了。
 setting -> ssh keys -> Add SSH key
   
 设置用户与email和其他设置
