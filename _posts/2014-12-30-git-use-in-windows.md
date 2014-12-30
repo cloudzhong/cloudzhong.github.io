@@ -38,10 +38,14 @@ id_rsa.pub 是public key.
 
     $git clone git@github.com:yourname/yourproject.git
     
-开始提交
+开始提交，有新增文件的提交方法
 
     $git add -A  
     $git commit -m "what modified in this time"
+	
+没有新增文件的提交方法
+	
+	$git commit -am "what modified in this time"
 	
 提交到github
 
