@@ -20,7 +20,8 @@ ssh key 使得通过ssh协议来与git服务器交互，这需要服务器的git
 ~/.ssh 目录下会生成id_rsa,id_rsa.pub文件
 id_rsa.pub 是public key.
 把你的ssh public key添加到github上，这样就能上传下载github上的repository了。
-setting -> ssh keys -> Add SSH key
+
+    setting -> ssh keys -> Add SSH key
   
 设置用户与email和其他设置
 
