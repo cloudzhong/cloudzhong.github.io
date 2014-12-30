@@ -18,6 +18,7 @@ add your key to github
 set your name and email	
     $ git config --global user.name "yourname" 
     $ git config --global user.email "your_email@example.com"
+	$ git config --global push.default matching
 set proxy 天朝的网络速度大家都懂的。
     $git config --global http.proxy 'socks5://127.0.0.1:8443'
 开始工作
