@@ -9,7 +9,7 @@ tags : [git,windows,github]
 ======================================
 
 ### git 下载
-从这里下载 http://git-scm.com/downloads
+从这里下载 <http://git-scm.com/downloads>
 
 ### git 配置
 生成ssh key  
@@ -38,7 +38,7 @@ id_rsa.pub 是public key.
 
     $git clone git@github.com:yourname/yourproject.git
     
-开始提交，有新增文件的提交方法
+开始提交，有新增/删除文件的提交方法
 
     $git add -A  
     $git commit -m "what modified in this time"
