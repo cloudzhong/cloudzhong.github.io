@@ -4,10 +4,9 @@ title: Cloud Zhong的记录
 tagline: Supporting tagline
 ---
 
-## Posts List
 尝试使用github + Jekyll Bootstrap写点东西
 
-博客列表：
+##博客列表：
 
 <ul class="posts">
   {% for post in site.posts %}
