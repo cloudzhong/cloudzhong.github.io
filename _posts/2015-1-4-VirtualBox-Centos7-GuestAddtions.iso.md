@@ -13,10 +13,10 @@ tags : [VirtualBox,Centos 7,GuestAddtions]
 2. 选Gnome，这样光驱能方便地加载上
 3. 安装必要工具
 
-	yum install kernel-devel
-	yum install gcc*
-	yum install epel-release
-	yum install dkms
+		yum install kernel-devel
+		yum install gcc*
+		yum install epel-release
+		yum install dkms
 	
 4. devices -> insert guest addional cd image. -> run
 
