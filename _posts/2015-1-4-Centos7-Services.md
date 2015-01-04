@@ -2,7 +2,7 @@
 layout: post
 category : Learn
 tagline: "Supporting tagline"
-tags : [Centos 7,Services]
+tags : [Centos 7,systemctl,Services]
 ---
 
 ## Centos 7 启动服务发生变化
