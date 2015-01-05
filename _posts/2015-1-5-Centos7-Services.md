@@ -47,7 +47,7 @@ CentOS 7的服务systemctl脚本存放在：/usr/lib/systemd/，有系统（syst
 		
 ### SYSTEMD TARGETS
 
-** Systemd targets are represented by target units. Target units end with the .target file extension and their only purpose is to group together other systemd units through a chain of dependencies. **
+**Systemd targets are represented by target units. Target units end with the .target file extension and their only purpose is to group together other systemd units through a chain of dependencies.**
 
 * 查看现在的Target
 
