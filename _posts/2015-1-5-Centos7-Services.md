@@ -21,6 +21,10 @@ CentOS 7的服务systemctl脚本存放在：/usr/lib/systemd/，有系统（syst
 	
 ### systemctl 用法
 
+* 显示服务状态
+		
+		systemctl status name.service
+
 * 重启服务
 		
 		systemctl restart name.service
@@ -41,6 +45,31 @@ CentOS 7的服务systemctl脚本存放在：/usr/lib/systemd/，有系统（syst
 
 		systemctl disable name.service
 		
+### SYSTEMD TARGETS
+
+* 查看现在的Target
+
+		systemctl list-units --type target
+		
+* 查看所有的Target
+
+		systemctl list-units --type target --all
+		
+* Changing the Default Target
+		
+		systemctl set-default name.target
+		
+* Changing the Current Target
+
+		systemctl isolate name.target
+		
+* Changing to Rescue Mode
+
+		systemctl rescue
+		
+This command is similar to systemctl isolate rescue.target
+
+
 
 
 
