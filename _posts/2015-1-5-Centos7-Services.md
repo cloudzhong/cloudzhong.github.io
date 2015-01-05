@@ -47,6 +47,8 @@ CentOS 7的服务systemctl脚本存放在：/usr/lib/systemd/，有系统（syst
 		
 ### SYSTEMD TARGETS
 
+** Systemd targets are represented by target units. Target units end with the .target file extension and their only purpose is to group together other systemd units through a chain of dependencies. **
+
 * 查看现在的Target
 
 		systemctl list-units --type target
@@ -69,7 +71,27 @@ CentOS 7的服务systemctl脚本存放在：/usr/lib/systemd/，有系统（syst
 		
 This command is similar to systemctl isolate rescue.target
 
+### 关机 挂起 休眠 系统
 
+* 关机
+
+		systemctl poweroff
+		
+* halt
+
+		systemctl halt
+		
+* 重启
+
+		systemctl reboot
+		
+* 挂起
+
+		systemctl suspend
+		
+* 休眠系统
+
+		systemctl hibernate
 
 
 
