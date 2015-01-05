@@ -12,13 +12,34 @@ tags : [Centos 7,systemctl,Services]
 CentOS 7继承了RHEL 7的新的特性，例如强大的systemctl，
 而systemctl的使用也使得以往系统服务的/etc/init.d的启动脚本的方式就此改变，
 
-CentOS 7的服务systemctl脚本存放在：/usr/lib/systemd/，有系统（system）和用户（user）之分
-
 在/usr/lib/systemd/system目录下
 建立 shadowsocks.services 文件
 
 内容为
 	
+	[Unit]
+	Description=shadowsocks server
+	After=network.target remote-fs.target nss-lookup.target
+
+	[Service]
+	ExecStart=/usr/bin/ssserver -c /etc/shadowsocks.json
+	KillMode=process
+
+	[Install]
+	WantedBy=multi-user.target
+	
+
+	
+修改services文件后，需要重新加载
+
+	systemctl daemon-reload
+	
+开始服务
+
+	systemctl enable shadowsocks.service
+	systemctl start shadowsocks.service
+	
+
 ### systemctl 用法
 
 * 显示服务状态
