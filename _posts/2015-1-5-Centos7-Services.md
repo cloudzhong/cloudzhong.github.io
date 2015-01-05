@@ -49,7 +49,11 @@ CentOS 7的服务systemctl脚本存放在：/usr/lib/systemd/，有系统（syst
 
 **Systemd targets are represented by target units. Target units end with the .target file extension and their only purpose is to group together other systemd units through a chain of dependencies.**
 
-* 查看现在的Target
+* 查看现在系统运行的Target
+
+		systemctl get-default
+
+* 查看现在加载的Target
 
 		systemctl list-units --type target
 		
@@ -60,6 +64,7 @@ CentOS 7的服务systemctl脚本存放在：/usr/lib/systemd/，有系统（syst
 * Changing the Default Target
 		
 		systemctl set-default name.target
+		
 		
 * Changing the Current Target
 
