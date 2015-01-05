@@ -70,6 +70,8 @@ CentOS 7继承了RHEL 7的新的特性，例如强大的systemctl，
 
 **Systemd targets are represented by target units. Target units end with the .target file extension and their only purpose is to group together other systemd units through a chain of dependencies.**
 
+**可以看出，Target只有一个作用，集合所有的SystemD的单元，并且管理他们的依赖, centos 6 之前的init 0 , init 6 再也不起作用了**
+
 * 查看现在系统运行的Target
 
 		systemctl get-default
