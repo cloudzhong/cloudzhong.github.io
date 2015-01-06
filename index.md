@@ -14,8 +14,3 @@ tagline: Supporting tagline
   {% endfor %}
 </ul>
 
-## To-Do
-如何更新Jekyll Bootstrap ?
-
-
-
