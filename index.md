@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 千里之行，始于足下
-tagline: Supporting tagline
+tagline: 前事不忘，后事之师
 ---
 
 尝试使用github + Jekyll Bootstrap写点东西
