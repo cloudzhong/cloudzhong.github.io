@@ -51,6 +51,16 @@ id_rsa.pub 是public key.
 
     $git push origin
 
+查看所有的变化
+	
+	$git status
+	
+不想提交，清除当前目录所有变化
 
+	$git git checkout -- .
+
+不想提交，清除当前文件A.txt的变化
+
+	$git git checkout -- a.txt
 
 
