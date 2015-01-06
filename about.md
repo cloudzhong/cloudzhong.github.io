@@ -4,6 +4,8 @@ title : About
 group: navigation
 ---
 
+爱学习~
+注意力分散~
 
 ## Follow me
 
