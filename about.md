@@ -4,8 +4,8 @@ title : About
 group: navigation
 ---
 
-°®Ñ§Ï°~
-×¢ÒâÁ¦·ÖÉ¢~
+çˆ±å­¦ä¹ 
+æ³¨æ„åŠ›åˆ†æ•£
 
 ## Follow me
 
