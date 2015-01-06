@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Cloud Zhong的记录
+title: 千里之行，始于足下
 tagline: Supporting tagline
 ---
 

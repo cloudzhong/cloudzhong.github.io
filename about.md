@@ -1,6 +1,7 @@
 ---
 layout: page
 title : About
+header: Posts By About
 group: navigation
 ---
 
