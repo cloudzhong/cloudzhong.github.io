@@ -79,7 +79,7 @@ centos 7 之前只能用init 3, init 5 之类的来指定运行级别，
 Centos 7 可以自定义指定的级别来启动，可以包含自己想启动的服务，可以去掉默认的服务。
 因为service都是包含在指定的target里面的。
 
-设置target里面的服务来定义run level内容
+设置target里面的服务来定义level内容
 设置系统默认的启动target来自定义run level.
 
 * 查看现在系统运行的Target
