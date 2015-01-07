@@ -3,14 +3,19 @@ layout: post
 category : Learn
 tagline: "Supporting tagline"
 tags : [Centos 7,systemctl,Services]
+Title : Centos 7 启动level自定义
 ---
 
-## Centos 7 启动服务发生变化
+systemctl单元有很多，最重要的应该是service和target，
+service都是服务，
+target是一些服务和其他单元的集合。
+target使得自定义runlevel变得轻松和易读。
 
-### 系统服务建立
 
-CentOS 7继承了RHEL 7的新的特性，例如强大的systemctl，
-而systemctl的使用也使得以往系统服务的/etc/init.d的启动脚本的方式就此改变，
+### 自定义服务建立
+
+systemctl的使用也使得以往系统服务的/etc/init.d的启动脚本的方式就此改变，
+自定义服务的方式如下
 
 在/usr/lib/systemd/system目录下
 建立 shadowsocks.services 文件
@@ -29,15 +34,15 @@ CentOS 7继承了RHEL 7的新的特性，例如强大的systemctl，
 	WantedBy=multi-user.target
 	
 
-	
-修改services文件后，需要重新加载
-
-	systemctl daemon-reload
-	
 开始服务
 
 	systemctl enable shadowsocks.service
 	systemctl start shadowsocks.service
+
+		
+修改services文件后，需要重新加载
+
+	systemctl daemon-reload
 	
 
 ### systemctl 用法
@@ -68,9 +73,11 @@ CentOS 7继承了RHEL 7的新的特性，例如强大的systemctl，
 		
 ### SYSTEMD TARGETS
 
-**Systemd targets are represented by target units. Target units end with the .target file extension and their only purpose is to group together other systemd units through a chain of dependencies.**
+**Target只有一个作用，集合所有的SystemD的单元，并且管理他们的依赖。**
 
-**可以看出，Target只有一个作用，集合所有的SystemD的单元，并且管理他们的依赖, centos 6 之前的init 0 , init 6 再也不起作用了**
+centos 7 之前只能用init 3, init 5 之类的来指定运行级别，
+Centos 7 可以自定义指定的级别来启动，可以包含自己想启动的服务，可以去掉默认的服务。
+因为service都是包含在指定的target里面的。
 
 * 查看现在系统运行的Target
 
@@ -84,20 +91,20 @@ CentOS 7继承了RHEL 7的新的特性，例如强大的systemctl，
 
 		systemctl list-units --type target --all
 		
-* Changing the Default Target
+* 设置默认的 Target
 		
 		systemctl set-default name.target
 		
 		
-* Changing the Current Target
+* 改变当前的 Target
 
 		systemctl isolate name.target
 		
-* Changing to Rescue Mode
+* 切换到急救模式
 
 		systemctl rescue
 		
-This command is similar to systemctl isolate rescue.target
+这个命令和`systemctl isolate rescue.target` 一样的
 
 ### 关机 挂起 休眠 系统
 
