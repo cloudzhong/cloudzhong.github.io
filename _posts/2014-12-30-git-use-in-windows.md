@@ -119,7 +119,7 @@ id_rsa.pub 是public key.
 
 **安全起见，应该鼓励使用下面的三个命令代替git pull**
 
-获取远程的变化
+获取远程的变化的引用。
 
 	$git fetch
 	
