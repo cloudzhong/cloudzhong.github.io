@@ -3,7 +3,7 @@ layout: post
 category : Learn
 tagline: "Supporting tagline"
 tags : [Centos 7,systemctl,Services]
-Title : Centos 7 启动level自定义
+title : Centos 7 启动level自定义
 ---
 
 systemctl单元有很多，最重要的应该是service和target，
