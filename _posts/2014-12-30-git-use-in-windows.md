@@ -4,6 +4,7 @@ category : Learn
 tagline: "Supporting tagline"
 tags : [git,windows,github]
 title : git 使用
+permalink : /git
 ---
 
 记录一下windows下使用git的要点，含github，git 命令都是运行在git代码的根目录
