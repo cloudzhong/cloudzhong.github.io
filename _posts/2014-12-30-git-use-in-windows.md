@@ -36,6 +36,10 @@ id_rsa.pub 是public key.
 本地设置了shadowsocks代理
 
     $git config --global http.proxy 'socks5://127.0.0.1:8443'
+
+只设置当前的repository使用代理，去掉global参数
+
+	$git config http.proxy 'socks5://127.0.0.1:8443'
     
 ### 开始工作
 
