@@ -40,6 +40,7 @@ id_rsa.pub 是public key.
 ### 开始工作
 
 从服务器下载源代码
+
     $git clone git@github.com:yourname/yourproject.git
 	
 修改后，提交前，查看所有的变化
@@ -71,8 +72,10 @@ id_rsa.pub 是public key.
 
 	$git git checkout -- a.txt
 
-错误提交，删除版本，注意commit_id可以是整个hash key的前面几位
+错误提交，删除版本，选择想要切换到的版本commit_id.
+注意commit_id可以是整个hash key的前面几位
 
+	$git log
 	$git reset --hard commit_id
 	
 ### git鼓励branch的提交,branch的使用
