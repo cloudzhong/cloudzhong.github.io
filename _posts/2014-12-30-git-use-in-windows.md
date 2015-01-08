@@ -139,7 +139,7 @@ id_rsa.pub 是public key.
 	
 提交本地变化到远程
 
-	$git push
+	$git push origin
 
 
 	
