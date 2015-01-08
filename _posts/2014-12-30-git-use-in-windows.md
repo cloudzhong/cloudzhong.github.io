@@ -106,6 +106,10 @@ id_rsa.pub 是public key.
 
 ### git 远程命令
 
+除了origin之外，还可以添加其他远程，这样也能从别人的地方merge他们的更新
+
+	git remote add jb git@github.com:plusjade/jekyll-bootstrap.git
+
 查看远程link到哪里
 
 	$git remote -v 
@@ -116,7 +120,8 @@ id_rsa.pub 是public key.
 
 获取远程的变化并自动合并
 
-	$git pull
+	$git pull origin
+	$git pull jb
 
 **安全起见，应该鼓励使用下面的三个命令代替git pull**
 
