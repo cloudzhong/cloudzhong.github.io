@@ -20,11 +20,9 @@ S/N 和 MEID 在电池后面。
 
 我用了google的adb,fastboot 来unlock
 
-
-2. 手机进入Bootloader模式(进入Bootloader进入方法：
-将手机彻底关机，然后同时按住【电源键】+【音量下键】，
-按住10秒左右手机画面显示华为logo不开机时，松开进入到Bootloader模式;
-　　注：在关机之前必须进入设置关闭快速启动;
+2. 手机进入Bootloader模式：
+将手机关机，然后同时按住【电源键】+【音量下键】，
+按住10秒左右手机画面显示华为logo不开机时，松开进入到Bootloader模式。
 
 3. 确保你的手机已经正确连接，应该显示手机序列号
 
@@ -34,7 +32,7 @@ S/N 和 MEID 在电池后面。
 	
 	fastboot oem unlock 1234567812345678
 	
-	注意替换解锁密码呢。
+	注意替换解锁密码为你申请到的密码
 
 如果没有adb和fastboot.
 也有网友的第三方unlock工具，比如
@@ -49,7 +47,7 @@ S/N 和 MEID 在电池后面。
 
 1. 下载 [华为C8817D第三方中文recovery;](http://pan.baidu.com/s/1mgkgP2g)
 
-2. 然后再工具界面上，输入数字1(刷入第三方中文版recovery)
+2. 然后在工具界面上，输入数字1(刷入第三方中文版recovery)
 
 3. 手机进入recovery模式
 
