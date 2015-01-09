@@ -11,10 +11,11 @@ root的优点不说了，直接上我的步骤。
 ### 解锁
 
 1. 首先去华为官网申请解锁密码
-S/N 和 MEID 在电池后面。
+
 
 [华为官网unlock](http://www.emui.com/plugin.php?id=unlock)
 
+S/N 和 MEID 在电池后面。 
 得到16位的解锁密码，比如1234567812345678
 
 我用了google的adb,fastboot 来unlock
@@ -50,9 +51,7 @@ S/N 和 MEID 在电池后面。
 
 2. 然后再工具界面上，输入数字1(刷入第三方中文版recovery)
 
-3. 手机进入recovery模式(华为荣耀畅玩4进入recovery教程：
-先将手机彻底关机，在手机关机的状态下，同时按住【电源键】+【音量上键】，
-数秒后，待手机震动后松开，即可进入到Recovery模式。
+3. 手机进入recovery模式
 
 4. recovery模式下，移动选择最后一项【mandfx】，然后选择获取Root权限即可
 
