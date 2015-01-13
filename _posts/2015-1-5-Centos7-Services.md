@@ -18,7 +18,7 @@ systemctl的使用也使得以往系统服务的/etc/init.d的启动脚本的方
 自定义服务的方式如下
 
 在/usr/lib/systemd/system目录下
-建立 shadowsocks.services 文件
+建立 shadowsocks.service 文件
 
 内容为
 	
