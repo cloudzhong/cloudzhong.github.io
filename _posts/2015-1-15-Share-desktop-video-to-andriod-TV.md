@@ -10,7 +10,7 @@ title : 使用华为立方播放电脑上的视频文件
 
 ### Iphone 镜像同步
 
-立方安装airpin(pro)， Iphone能直接往上拖动，出现air play 选项，可以同步，也可以播放视频与音乐
+立方安装airpin(pro)， Iphone能直接往上拖动，出现air play 选项，可以镜像同步，也可以播放视频与音乐
 
 ### 立方播放电脑上视频文件
 
@@ -20,9 +20,11 @@ title : 使用华为立方播放电脑上的视频文件
 
 ![win 7 设置图]({{ site.url }}/assets/win7share.PNG)
 
+选上stream video to all devices，哈哈，要的就是这个。
+
 BubbleUpnp render 选华为立方, library选电脑
 
-搞定
+需要把视频目录include到用户的video, andriod下面就能访问了。
 
 
 
