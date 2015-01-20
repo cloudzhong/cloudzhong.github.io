@@ -15,7 +15,7 @@ tagline: 前事不忘，后事之师
 		<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
 		<br>
 		{{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-		<a href="{{ BASE_PATH }}{{ post.url }}">......更多</a>
+		<span><a href="{{ BASE_PATH }}{{ post.url }}">......更多</a></span>
 		<hr>
 	</li>
   {% endfor %}
