@@ -16,7 +16,6 @@ tagline: 前事不忘，后事之师
 		{{ post.excerpt | remove: '<p>' | remove: '</p>' }}
 		<span><a href="{{ BASE_PATH }}{{ post.url }}">阅读全文 &raquo;</a></span>
 		</div>
-		<hr>
 	</li>
   {% endfor %}
 </ul>
