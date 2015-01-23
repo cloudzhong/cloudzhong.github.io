@@ -17,6 +17,7 @@ tagline: 前事不忘，后事之师
 		<span><a href="{{ BASE_PATH }}{{ post.url }}">阅读全文 &raquo;</a></span>
 		</div>
 	</li>
+	<hr>
   {% endfor %}
 </ul>
 
