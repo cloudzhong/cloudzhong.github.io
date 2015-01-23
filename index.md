@@ -13,7 +13,7 @@ tagline: 前事不忘，后事之师
     <li><span>{{ post.date | date: "%Y年%m月%d日" }}</span>
 		<h4><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h4>
 		<div>
-		{{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+		{{ post.content | strip_html | truncate: 100 }}
 		<span><a href="{{ BASE_PATH }}{{ post.url }}">阅读全文 &raquo;</a></span>
 		</div>
 	</li>
