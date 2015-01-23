@@ -71,11 +71,11 @@ id_rsa.pub 是public key.
 	
 不想提交，清除当前目录所有变化
 
-	$git git checkout -- .
+	$git checkout -- .
 
 不想提交，清除当前文件A.txt的变化
 
-	$git git checkout -- a.txt
+	$git checkout -- a.txt
 
 错误提交，删除版本，选择想要切换到的版本commit_id.
 注意commit_id可以是整个hash key的前面几位
